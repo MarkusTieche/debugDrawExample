@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://debug.gd" type="Script" id=1]
+[ext_resource path="res://debugTest.gd" type="Script" id=2]
+
+[node name="mainScene" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="debugNode" type="Control" parent="."]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.01322 )
